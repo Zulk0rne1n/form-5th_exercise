@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <div id="e_mail">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+      </div>
+      <div id="password">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+      </div>
+      <div id="full_name">
+        <label for="full_name">Name and Lastname:</label>
+        <input type="text" name="full_name" id="full_name">
+      </div>
+      <div id="birthdate">
+        <label for="date">Date of Birth:</label>
+        <input type="date" name="date" id="date">
+      </div>
+      <div id="tel">
+        <label for="tel">Telephone Number:</label>
+        <input type="tel" name="tel" id="tel">
+      </div>
+      <div id="plan">
+        <label for="plan">Select A Plan</label>
+        <select name="plan" id="plan">
+          <option value="00">Free</option>
+          <optgroup label="Paid Plans">
+          <option value="01">Premium for $5.99</option>
+          <option value="02">Ultra Premium for $7.99</option>
+          <option value="03">Mega Premium for $9.99</option>
+        </optgroup>
+        </select>
+      </div>
+      <div id="credit_card">
+        <label for="credit_card">Credit Card Number:</label>
+        <input type="tel" maxlength="16" inputmode="numeric" pattern="[0-9]{16}" name="credit_card" id="credit_card">
+      </div>
+      <div id="cvc">
+        <label for="cvc">CVC:</label>
+        <input type="password" maxlength="3" inputmode="numeric" pattern="[0-9]{3}" name="cvc" id="cvc">
+      </div>
+      <div id="exp_date">
+        <label for="exp_date">Expiration_Date</label>
+        <input type="date" name="exp_date" id="exp_date" min="2022-12-15">
+      </div>
+      <div id="address">
+        <label for="address">Billing Address:</label>
+        <textarea 
+        name="address" name="address" id="address">
+        </textarea>
+      </div>
+    </form>
+  </body>
+</html>
